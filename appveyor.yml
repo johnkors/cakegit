@@ -1,0 +1,10 @@
+
+
+
+
+
+install:
+  - docker build -t t:1 .
+
+build_script:
+  - docker run t:1
