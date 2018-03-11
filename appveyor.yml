@@ -1,8 +1,5 @@
 image:
 - Visual Studio 2017
 
-install:
-  - docker build -t t:1 .
-
 build_script:
-  - docker run t:1
+  - build.ps1
