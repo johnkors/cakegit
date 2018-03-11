@@ -1,6 +1,6 @@
 ## Repro of bug using Cake.Git on Linux
 
-Linux: ![Build status](https://api.travis-ci.org/johnkors/cakegit.svg?branch=master)
+Linux: [![Build Status](https://travis-ci.org/johnkors/cakegit.svg?branch=master)](https://travis-ci.org/johnkors/cakegit)
 
 Windows: [![Build status](https://ci.appveyor.com/api/projects/status/lotw7sqd80h2de02/branch/master?svg=true)](https://ci.appveyor.com/project/JohnKorsnes/cakegit/branch/master)
 
