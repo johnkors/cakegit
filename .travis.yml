@@ -3,8 +3,5 @@ sudo: required
 services:
   - docker
 
-before_install:
-  - docker build -t cakegit:1 -f ./Linux.Dockerfile ./
-
 script:
-  - docker run --rm cakegit:1
+  -  docker build -t cakegit:1 -f ./Linux.Dockerfile ./

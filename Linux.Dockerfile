@@ -13,9 +13,10 @@ RUN echo "deb http://download.mono-project.com/repo/debian stretch/snapshots/$MO
   && rm -rf /var/lib/apt/lists/* /tmp/*
 
 RUN apt-get update \  
-  && apt-get install -y binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
+  && apt-get install -y libcurl3 binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
   && rm -rf /var/lib/apt/lists/* /tmp/*
+
 
 WORKDIR /build
 COPY ./ .
-ENTRYPOINT ./build.sh 
+RUN ./build.sh 
