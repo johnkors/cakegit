@@ -17,3 +17,5 @@ System.TypeInitializationException: The type initializer for 'LibGit2Sharp.Core.
 ```
 
 It works as intended on Windows / macOS.
+
+Update: `LibGit2Sharp` does not play well with Debian, which is the base image used for `FROM microsoft/dotnet:2.1-sdk`. [Switching to Ubuntu as a base image](https://github.com/johnkors/cakegit/commit/a304925b6c0bb724b6e8f4c2fd03b168bf72e99a) makes it build fine : [OK build](https://travis-ci.org/johnkors/cakegit/builds/355278344)
